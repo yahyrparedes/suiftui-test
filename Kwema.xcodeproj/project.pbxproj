@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F29403B62903442E0076C14C /* KwemaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29403B52903442E0076C14C /* KwemaApp.swift */; };
+		F29403B82903442E0076C14C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29403B72903442E0076C14C /* ContentView.swift */; };
+		F29403BA2903442F0076C14C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F29403B92903442F0076C14C /* Assets.xcassets */; };
+		F29403BD2903442F0076C14C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F29403BC2903442F0076C14C /* Preview Assets.xcassets */; };
+		F29403BF2903442F0076C14C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29403BE2903442F0076C14C /* Persistence.swift */; };
+		F29403C22903442F0076C14C /* Kwema.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F29403C02903442F0076C14C /* Kwema.xcdatamodeld */; };
+		F29403CC2903442F0076C14C /* KwemaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29403CB2903442F0076C14C /* KwemaTests.swift */; };
+		F29403D62903442F0076C14C /* KwemaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29403D52903442F0076C14C /* KwemaUITests.swift */; };
+		F29403D82903442F0076C14C /* KwemaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29403D72903442F0076C14C /* KwemaUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F29403C82903442F0076C14C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29403AA2903442E0076C14C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F29403B12903442E0076C14C;
+			remoteInfo = Kwema;
+		};
+		F29403D22903442F0076C14C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29403AA2903442E0076C14C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F29403B12903442E0076C14C;
+			remoteInfo = Kwema;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F29403B22903442E0076C14C /* Kwema.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kwema.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F29403B52903442E0076C14C /* KwemaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KwemaApp.swift; sourceTree = "<group>"; };
+		F29403B72903442E0076C14C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F29403B92903442F0076C14C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F29403BC2903442F0076C14C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F29403BE2903442F0076C14C /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		F29403C12903442F0076C14C /* Kwema.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Kwema.xcdatamodel; sourceTree = "<group>"; };
+		F29403C72903442F0076C14C /* KwemaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KwemaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F29403CB2903442F0076C14C /* KwemaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KwemaTests.swift; sourceTree = "<group>"; };
+		F29403D12903442F0076C14C /* KwemaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KwemaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F29403D52903442F0076C14C /* KwemaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KwemaUITests.swift; sourceTree = "<group>"; };
+		F29403D72903442F0076C14C /* KwemaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KwemaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F29403AF2903442E0076C14C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F29403C42903442F0076C14C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F29403CE2903442F0076C14C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F29403A92903442E0076C14C = {
+			isa = PBXGroup;
+			children = (
+				F29403B42903442E0076C14C /* Kwema */,
+				F29403CA2903442F0076C14C /* KwemaTests */,
+				F29403D42903442F0076C14C /* KwemaUITests */,
+				F29403B32903442E0076C14C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F29403B32903442E0076C14C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F29403B22903442E0076C14C /* Kwema.app */,
+				F29403C72903442F0076C14C /* KwemaTests.xctest */,
+				F29403D12903442F0076C14C /* KwemaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F29403B42903442E0076C14C /* Kwema */ = {
+			isa = PBXGroup;
+			children = (
+				F29403B52903442E0076C14C /* KwemaApp.swift */,
+				F29403B72903442E0076C14C /* ContentView.swift */,
+				F29403B92903442F0076C14C /* Assets.xcassets */,
+				F29403BE2903442F0076C14C /* Persistence.swift */,
+				F29403C02903442F0076C14C /* Kwema.xcdatamodeld */,
+				F29403BB2903442F0076C14C /* Preview Content */,
+			);
+			path = Kwema;
+			sourceTree = "<group>";
+		};
+		F29403BB2903442F0076C14C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F29403BC2903442F0076C14C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F29403CA2903442F0076C14C /* KwemaTests */ = {
+			isa = PBXGroup;
+			children = (
+				F29403CB2903442F0076C14C /* KwemaTests.swift */,
+			);
+			path = KwemaTests;
+			sourceTree = "<group>";
+		};
+		F29403D42903442F0076C14C /* KwemaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F29403D52903442F0076C14C /* KwemaUITests.swift */,
+				F29403D72903442F0076C14C /* KwemaUITestsLaunchTests.swift */,
+			);
+			path = KwemaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F29403B12903442E0076C14C /* Kwema */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F29403DB2903442F0076C14C /* Build configuration list for PBXNativeTarget "Kwema" */;
+			buildPhases = (
+				F29403AE2903442E0076C14C /* Sources */,
+				F29403AF2903442E0076C14C /* Frameworks */,
+				F29403B02903442E0076C14C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kwema;
+			productName = Kwema;
+			productReference = F29403B22903442E0076C14C /* Kwema.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F29403C62903442F0076C14C /* KwemaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F29403DE2903442F0076C14C /* Build configuration list for PBXNativeTarget "KwemaTests" */;
+			buildPhases = (
+				F29403C32903442F0076C14C /* Sources */,
+				F29403C42903442F0076C14C /* Frameworks */,
+				F29403C52903442F0076C14C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F29403C92903442F0076C14C /* PBXTargetDependency */,
+			);
+			name = KwemaTests;
+			productName = KwemaTests;
+			productReference = F29403C72903442F0076C14C /* KwemaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F29403D02903442F0076C14C /* KwemaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F29403E12903442F0076C14C /* Build configuration list for PBXNativeTarget "KwemaUITests" */;
+			buildPhases = (
+				F29403CD2903442F0076C14C /* Sources */,
+				F29403CE2903442F0076C14C /* Frameworks */,
+				F29403CF2903442F0076C14C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F29403D32903442F0076C14C /* PBXTargetDependency */,
+			);
+			name = KwemaUITests;
+			productName = KwemaUITests;
+			productReference = F29403D12903442F0076C14C /* KwemaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F29403AA2903442E0076C14C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					F29403B12903442E0076C14C = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					F29403C62903442F0076C14C = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = F29403B12903442E0076C14C;
+					};
+					F29403D02903442F0076C14C = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = F29403B12903442E0076C14C;
+					};
+				};
+			};
+			buildConfigurationList = F29403AD2903442E0076C14C /* Build configuration list for PBXProject "Kwema" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F29403A92903442E0076C14C;
+			productRefGroup = F29403B32903442E0076C14C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F29403B12903442E0076C14C /* Kwema */,
+				F29403C62903442F0076C14C /* KwemaTests */,
+				F29403D02903442F0076C14C /* KwemaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F29403B02903442E0076C14C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F29403BD2903442F0076C14C /* Preview Assets.xcassets in Resources */,
+				F29403BA2903442F0076C14C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F29403C52903442F0076C14C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F29403CF2903442F0076C14C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F29403AE2903442E0076C14C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F29403BF2903442F0076C14C /* Persistence.swift in Sources */,
+				F29403B82903442E0076C14C /* ContentView.swift in Sources */,
+				F29403B62903442E0076C14C /* KwemaApp.swift in Sources */,
+				F29403C22903442F0076C14C /* Kwema.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F29403C32903442F0076C14C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F29403CC2903442F0076C14C /* KwemaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F29403CD2903442F0076C14C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F29403D82903442F0076C14C /* KwemaUITestsLaunchTests.swift in Sources */,
+				F29403D62903442F0076C14C /* KwemaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F29403C92903442F0076C14C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F29403B12903442E0076C14C /* Kwema */;
+			targetProxy = F29403C82903442F0076C14C /* PBXContainerItemProxy */;
+		};
+		F29403D32903442F0076C14C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F29403B12903442E0076C14C /* Kwema */;
+			targetProxy = F29403D22903442F0076C14C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F29403D92903442F0076C14C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F29403DA2903442F0076C14C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F29403DC2903442F0076C14C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Kwema/Preview Content\"";
+				DEVELOPMENT_TEAM = XHZJU36984;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yapagood.Kwema;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F29403DD2903442F0076C14C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Kwema/Preview Content\"";
+				DEVELOPMENT_TEAM = XHZJU36984;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yapagood.Kwema;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F29403DF2903442F0076C14C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XHZJU36984;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yapagood.KwemaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kwema.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Kwema";
+			};
+			name = Debug;
+		};
+		F29403E02903442F0076C14C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XHZJU36984;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yapagood.KwemaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kwema.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Kwema";
+			};
+			name = Release;
+		};
+		F29403E22903442F0076C14C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XHZJU36984;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yapagood.KwemaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Kwema;
+			};
+			name = Debug;
+		};
+		F29403E32903442F0076C14C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XHZJU36984;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yapagood.KwemaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Kwema;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F29403AD2903442E0076C14C /* Build configuration list for PBXProject "Kwema" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F29403D92903442F0076C14C /* Debug */,
+				F29403DA2903442F0076C14C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F29403DB2903442F0076C14C /* Build configuration list for PBXNativeTarget "Kwema" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F29403DC2903442F0076C14C /* Debug */,
+				F29403DD2903442F0076C14C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F29403DE2903442F0076C14C /* Build configuration list for PBXNativeTarget "KwemaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F29403DF2903442F0076C14C /* Debug */,
+				F29403E02903442F0076C14C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F29403E12903442F0076C14C /* Build configuration list for PBXNativeTarget "KwemaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F29403E22903442F0076C14C /* Debug */,
+				F29403E32903442F0076C14C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F29403C02903442F0076C14C /* Kwema.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F29403C12903442F0076C14C /* Kwema.xcdatamodel */,
+			);
+			currentVersion = F29403C12903442F0076C14C /* Kwema.xcdatamodel */;
+			path = Kwema.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F29403AA2903442E0076C14C /* Project object */;
+}
