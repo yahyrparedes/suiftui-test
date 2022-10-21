@@ -6,83 +6,114 @@
 //
 
 import SwiftUI
-import CoreData
 
 struct ContentView: View {
+    
     @Environment(\.managedObjectContext) private var viewContext
-
-    @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
-        animation: .default)
-    private var items: FetchedResults<Item>
-
     var body: some View {
-        NavigationView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                    } label: {
-                        Text(item.timestamp!, formatter: itemFormatter)
+        ZStack {
+            Color.blue
+                .ignoresSafeArea()
+            VStack {
+                VStack {
+                    VStack(spacing: 0){
+                        Spacer().frame(height: 5)
+                        Image("logo_on")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 150, height: 35, alignment: .center)
+                        
+                        Text("You are covered!")
+                            .font(.body)
+                            .foregroundColor(.black)
+                        Spacer().frame(height: 10)
                     }
-                }
-                .onDelete(perform: deleteItems)
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
+                    .font(.largeTitle)
+                    .padding(EdgeInsets(top: 10, leading: 10, bottom: 0, trailing: 10))
+                    .frame(width: 250)
+                    .background(RoundedCorners(color:  .green, tl: 22, tr: 22, bl: 0, br: 0))
+                    
+                    VStack(alignment: .leading, spacing:5 ) {
+                        Spacer().frame(height: 10)
+                        HStack {
+                            Image(systemName: "wrench.adjustable")
+                                .foregroundColor(.green)
+                            Text("Bluetooth").foregroundColor(.gray)
+                                .font(.title2)
+                        }
+                        HStack {
+                            Image(systemName: "location")
+                                .foregroundColor(.green)
+                            Text("GPS").foregroundColor(.gray)
+                                .font(.title2)
+                        }
+                        HStack {
+                            Image(systemName: "network")
+                                .foregroundColor(.green)
+                            Text("Mobile Data").foregroundColor(.gray)
+                                .font(.title2)
+                        }
                     }
+                    .font(.title)
+                    .padding(EdgeInsets(top:  0, leading: 10, bottom: 10, trailing: 10))
+                    .frame(width: 250)
+                    .background(RoundedCorners(color: .white, tl: 0, tr: 0, bl: 22, br: 22))
+                    .foregroundColor(.white)
+                }
+                VStack {
+                    VStack(spacing: 0){
+                        Spacer().frame(height: 5)
+                        Image("logo_off")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 150, height: 35, alignment: .center)
+                        
+                        Text("You are not covered!")
+                            .font(.body)
+                            .foregroundColor(.white)
+                        Spacer().frame(height: 10)
+                    }
+                    .font(.largeTitle)
+                    .padding(EdgeInsets(top: 10, leading: 10, bottom: 0, trailing: 10))
+                    .frame(width: 250)
+                    .background(RoundedCorners(color:  .red, tl: 22, tr: 22, bl: 0, br: 0))
+                    
+                    VStack(alignment: .leading, spacing:5 ) {
+                        Spacer().frame(height: 10)
+                        HStack {
+                            Image(systemName: "wrench.adjustable")
+                                .foregroundColor(.red)
+                            Text("Bluetooth").foregroundColor(.gray)
+                                .font(.title2)
+                        }
+                        HStack {
+                            Image(systemName: "location")
+                                .foregroundColor(.red)
+                            Text("GPS").foregroundColor(.gray)
+                                .font(.title2)
+                        }
+                        HStack {
+                            Image(systemName: "network")
+                                .foregroundColor(.red)
+                            Text("Mobile Data").foregroundColor(.gray)
+                                .font(.title2)
+                        }
+                    }
+                    .font(.title)
+                    .padding(EdgeInsets(top:  0, leading: 10, bottom: 10, trailing: 10))
+                    .frame(width: 250)
+                    .background(RoundedCorners(color: .white, tl: 0, tr: 0, bl: 22, br: 22))
+                    .foregroundColor(.white)
                 }
             }
-            Text("Select an item")
         }
-    }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            offsets.map { items[$0] }.forEach(viewContext.delete)
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
-        }
+         
     }
 }
-
-private let itemFormatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.dateStyle = .short
-    formatter.timeStyle = .medium
-    return formatter
-}()
-
+  
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }
+  

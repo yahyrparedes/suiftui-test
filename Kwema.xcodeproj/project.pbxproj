@@ -16,6 +16,7 @@
 		F29403CC2903442F0076C14C /* KwemaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29403CB2903442F0076C14C /* KwemaTests.swift */; };
 		F29403D62903442F0076C14C /* KwemaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29403D52903442F0076C14C /* KwemaUITests.swift */; };
 		F29403D82903442F0076C14C /* KwemaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29403D72903442F0076C14C /* KwemaUITestsLaunchTests.swift */; };
+		F29403E7290349700076C14C /* RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29403E6290349700076C14C /* RoundedCorners.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		F29403D12903442F0076C14C /* KwemaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KwemaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F29403D52903442F0076C14C /* KwemaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KwemaUITests.swift; sourceTree = "<group>"; };
 		F29403D72903442F0076C14C /* KwemaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KwemaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F29403E6290349700076C14C /* RoundedCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorners.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				F29403BE2903442F0076C14C /* Persistence.swift */,
 				F29403C02903442F0076C14C /* Kwema.xcdatamodeld */,
 				F29403BB2903442F0076C14C /* Preview Content */,
+				F29403E6290349700076C14C /* RoundedCorners.swift */,
 			);
 			path = Kwema;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F29403E7290349700076C14C /* RoundedCorners.swift in Sources */,
 				F29403BF2903442F0076C14C /* Persistence.swift in Sources */,
 				F29403B82903442E0076C14C /* ContentView.swift in Sources */,
 				F29403B62903442E0076C14C /* KwemaApp.swift in Sources */,
